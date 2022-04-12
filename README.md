@@ -42,28 +42,38 @@ The customers file (4) has 3 additional columns which can be omitted because the
 
 The coding for all the data handling is extracted into helper python files which are located in subfolder “utils” and are class based or perhaps pseudo class based.
 There are classes which are more generic and classes which are project specific: 
-- Project specific<br>
-df_proj.py		      data loading and preparing of the dictionaries
-df_data_prep_02.py 	data preprocessing
-- More generic <br>
-df_data_prep_01.py	data preprocessing<br>
-df_pca.py		        PCA processing<br>
-df_kmeans.py		    KMeans processing<br>
-sl_segment.py		    Supervised Learning processing<br>
-df_stat.py      J   ust to print some data frame statistics<br>
+
+**Project specific**<br>
+
+| File | Description |
+|------|-------------|
+| df_proj.py|data loading and preparing of the dictionaries|
+|df_data_prep_02.py| data preprocessing|
+
+**More generic** <br>
+
+| File | Description |
+|------|-------------|
+|df_data_prep_01.py|data preprocessing|
+|df_pca.py|PCA processing|
+|df_kmeans.py|KMeans processing|
+|sl_segment.py|Supervised Learning processing|
+|df_stat.py|Just to print/plot some data frame statisticsg|
+
+
 
 The goal is to reuse the more generic files for other projects whereas the project specific files controls the general handling.
 
 ##	How to run everything
 
-The following is expected: 
-•	There are 6 files in the “data” folder (s. above)
-•	The original file “DIAS information Levels – Attributes 2017.xlsx” was manually adapted by adding the column “DataType”. Here the columns are classified as numerical or categorical. That information is used to build up a central column dictionary which hold central information to make the preprocessing. “_CHANGED” was added to the file name to give a hint to the modification. 
-•	There is a “utils” folder with the following python files: 
+The following is expected:<br>
+- There are 6 files in the “data” folder (s. above)
+- The original file “DIAS information Levels – Attributes 2017.xlsx” was manually adapted by adding the column “DataType”. Here the columns are classified as numerical or categorical. That information is used to build up a central column dictionary which hold central information to make the preprocessing. “_CHANGED” was added to the file name to give a hint to the modification. 
+- There is a “utils” folder with the following python files: 
 df_proj.py, df_data_prep_01.py, df_data_prep_02.py, df_pca.py, df_kmeans.py, sl_segment.py
-•	All the utils files are executed by the central jupyter notebook “Arvato Project Workbook.ipynb”
-•	To run the notebook in the Udacity workspace you have to run the bash script “bash pip_install.py”. That command file make some updates of the run time environment (update scikit-learn, install xgboost) 
-•	Depending on the used runtime either the sklearn.preprocessing.Imputer (local) or sklearn.impute.SimpleImputer (Udacity workspace) has to be used. Currently the workbook contains the SimpleImputer. Just exchange SimpleImputer by Imputer or vice versa if necessary. 
+- All the utils files are executed by the central jupyter notebook “Arvato Project Workbook.ipynb”
+- To run the notebook in the Udacity workspace you have to run the bash script “bash pip_install.py”. That command file make some updates of the run time environment (update scikit-learn, install xgboost) 
+- Depending on the used runtime either the sklearn.preprocessing.Imputer (local) or sklearn.impute.SimpleImputer (Udacity workspace) has to be used. Currently the workbook contains the SimpleImputer. Just exchange SimpleImputer by Imputer or vice versa if necessary. 
 
 ## Licence, Acknowledgement 
 The data soures are protected but it was possible to use them for this project. 
