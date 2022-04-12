@@ -42,15 +42,15 @@ The customers file (4) has 3 additional columns which can be omitted because the
 
 The coding for all the data handling is extracted into helper python files which are located in subfolder “utils” and are class based or perhaps pseudo class based.
 There are classes which are more generic and classes which are project specific: 
-•	Project specific
+- Project specific<br>
 df_proj.py		data loading and preparing of the dictionaries
 df_data_prep_02.py 	data preprocessing
-•	More generic 
-df_data_prep_01.py	data preprocessing 
-df_pca.py		PCA processing
-df_kmeans.py		KMeans processing
-sl_segment.py		Supervised Learning processing 
-df_stat.py      Just to print some data frame statistics 
+- More generic <br>
+df_data_prep_01.py	data preprocessing<br>
+df_pca.py		PCA processing<br>
+df_kmeans.py		KMeans processing<br>
+sl_segment.py		Supervised Learning processing<br>
+df_stat.py      Just to print some data frame statistics<br>
 
 The goal is to reuse the more generic files for other projects whereas the project specific files controls the general handling.
 
