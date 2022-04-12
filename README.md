@@ -23,18 +23,18 @@ I have tried to organize the code a little bit to make it more reusable and duri
 
 The data basis consist of 6 files which are provided by a company. The data is not attached to the Github repository because it contains confidential data about customers so that you will find here only the Jupyter notebook and the helper Python code to process the data. 
 The data files are all located in a subfolder called “data”. 
-1.	DIAS Attributes – Values 2017.xlsx
+1.	DIAS Attributes – Values 2017.xlsx<br>
 Contains possible attributes for a lot of the columns in the data set which can be used to lookup the description of some keys available in the data sets. 
-2.	DIAS Information Levels – Attributes 20017.xlsx
+2.	DIAS Information Levels – Attributes 20017.xlsx<br>
 Contains some short information about the columns which are available in the main data set with the people specific data.
-3.	Udacity_AZDIAS_052018.csv
+3.	Udacity_AZDIAS_052018.csv<br>
 Demographics data for the general population of Germany (about 900 000 persons with 366 features (columns)
-4.	Udacity_CUSTOMERS_051028.csv
+4.	Udacity_CUSTOMERS_051028.csv<br>
 Demographics data for customers of a mail-order company which was already done and contains some information about a customer response (about 192 000 persons with 369 features (columns).
-5.	Udacity_MAILOUT_051218_TEST.csv
+5.	Udacity_MAILOUT_051218_TEST.csv<br>
 Demographics data for individuals who were already part of a marketing campaign (about 43 000 persons with 367 features (columns). 
-6.	Udacity_MAILOUT_052018_TRAIN.csv
-Demographics data for indiviudals who were already part of a marketing campaign (about 43 000 persons with 366 features (columns).
+6.	Udacity_MAILOUT_052018_TRAIN.csv<br>
+Demographics data for indiviudals who were already part of a marketing campaign (about 43 000 persons with 366 features (columns).<br>
 All the files with person data contain the same structure besides some peculiarities. 
 The customers file (4) has 3 additional columns which can be omitted because they do not appear in the other files. The mailout files are from the same campaign but split into one part with a response (5) and one part without a response (6). The latter file will be used to evaluate the performance of the model. 
 
@@ -43,14 +43,14 @@ The customers file (4) has 3 additional columns which can be omitted because the
 The coding for all the data handling is extracted into helper python files which are located in subfolder “utils” and are class based or perhaps pseudo class based.
 There are classes which are more generic and classes which are project specific: 
 - Project specific<br>
-df_proj.py		data loading and preparing of the dictionaries
+df_proj.py		      data loading and preparing of the dictionaries
 df_data_prep_02.py 	data preprocessing
 - More generic <br>
 df_data_prep_01.py	data preprocessing<br>
-df_pca.py		PCA processing<br>
-df_kmeans.py		KMeans processing<br>
-sl_segment.py		Supervised Learning processing<br>
-df_stat.py      Just to print some data frame statistics<br>
+df_pca.py		        PCA processing<br>
+df_kmeans.py		    KMeans processing<br>
+sl_segment.py		    Supervised Learning processing<br>
+df_stat.py      J   ust to print some data frame statistics<br>
 
 The goal is to reuse the more generic files for other projects whereas the project specific files controls the general handling.
 
