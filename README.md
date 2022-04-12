@@ -66,7 +66,8 @@ df_proj.py, df_data_prep_01.py, df_data_prep_02.py, df_pca.py, df_kmeans.py, sl_
 •	Depending on the used runtime either the sklearn.preprocessing.Imputer (local) or sklearn.impute.SimpleImputer (Udacity workspace) has to be used. Currently the workbook contains the SimpleImputer. Just exchange SimpleImputer by Imputer or vice versa if necessary. 
 
 ## Licence, Acknowledgement 
-
+The data soures are protected but it was possible to use them for this project. 
+Without that kind willingness it would not be possible to work on the project. Many thanks. 
 
 
 
