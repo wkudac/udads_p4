@@ -23,7 +23,7 @@ Basically the approach in such a project is often similar. Have a look at the da
 There are powerful modules provided in the community like scikit-learn which alleviates the work very much. But there is still work to do outside of that modules especially in the data preparation part.   
 I have tried to organize the code a little bit to make it more reusable and during the course it becomes clearer what are the tasks which appear repeatedly. But to be honest there is much room for improvements.  An interesting thing is that especially in such a topic like AI there is much manual work to do. 
 
-A more detailed description with further results can be found here: 
+A more detailed description with further results can be found here: https://medium.com/p/d90497ed4621/edit
 
 ## File Descriptions 
 
