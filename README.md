@@ -81,6 +81,8 @@ df_proj.py, df_data_prep_01.py, df_data_prep_02.py, df_pca.py, df_kmeans.py, sl_
 - All the utils files are executed by the central jupyter notebook “Arvato Project Workbook.ipynb”
 - To run the notebook in the Udacity workspace you have to run the bash script “bash pip_install.py”. That command file make some updates of the run time environment (update scikit-learn, install xgboost) 
 - Depending on the used runtime either the sklearn.preprocessing.Imputer (local) or sklearn.impute.SimpleImputer (Udacity workspace) has to be used. Currently the workbook contains the SimpleImputer. Just exchange SimpleImputer by Imputer or vice versa if necessary. 
+- The BalancedRandomForest classifier needs a certain joblib version which cannot be installed in the Udacity workspace. Please use global parameter GC_ESTIMATORS = ['LOGREG', 'RANFOR', 'XGB'] instead of GC_ESTIMATORS = ['LOGREG', 'RANFOR', 'BALRANFOR', 'XGB']
+- There are some other global parameters which are used to control the runtime behavior like the GC_MAC_ROWS which can be used to read only a certain number of rows from the data set (GC_MAX_ROWS=0 -> read all rows wanted).
 
 ## Licence, Acknowledgement 
 The data soures are protected but it was possible to use them for this project. 
